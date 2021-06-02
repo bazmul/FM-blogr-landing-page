@@ -5,46 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | [Blogr]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Product
+  <header>
+    <nav class="navigation">
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+      <a href="#" class="logo"><img src="images/logo.svg"></a>
+      <button class="hamburger"><img class="hamburger-img" src="images/icon-hamburger.svg"></button>
+      
+      
+      <div class="mobile-nav-container">
 
-  Company
+        <ul class="nav-ul main">
+          <li><a class="li-main" href="#product">Product</a>
 
-  About
-  Team
-  Blog
-  Careers
+            <div class="submenu 1">
+              <ul class="sub-nav-ul">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#marketing">Marketing</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#integrations">Integrations</a></li>
+              </ul>
+            </div>
 
-  Connect
+          </li>
 
-  Contact
-  Newsletter
-  LinkedIn
+          <li><a class="li-main flip" href="#company">Company</a>
+            <div class="submenu 2">
+              <ul class="sub-nav-ul">
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#careers">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li><a class="li-main" href="#connect">Connect</a>
+            <div class="submenu 3">
+              <ul class="sub-nav-ul">
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#linkedin">LinkedIn</a></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="mobile-nav-account-container">
+          <ul class="nav-ul account">
+            <li><a href="#login" id="login-btn">Login</a></li>
+            <li><a href="#signup" id="signup-btn">Sign Up</a></li>
+          </ul>
+        </div>
+
+      </div>
+      
+    </nav>
+
+      <div class="header-content">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <button class="header-btn" id="white-btn">Start for Free</button>
+        <button class="header-btn" id="learn-btn">Learn More</button>
+      </div>
+    
+
+  </header>
   
-  Login
-  Sign Up
-
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
-
   Designed for the future
 
   Introducing an extensible editor
@@ -89,11 +122,7 @@
   
   Contact
   Newsletter
-  LinkedIn
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  LinkedIn 
+<script src="app.js"></script>
 </body>
 </html>
