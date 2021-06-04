@@ -1,0 +1,163 @@
+/* TYPOGRAPHY */
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 700; 
+}
+
+.mobile-nav-container {
+    text-align: center;
+}
+
+.nav-ul.account a {
+    font-size: 1.3rem;
+    font-weight: 500; 
+}
+
+.sub-nav-ul li a {
+    color: rgb(124, 124, 124);
+}
+
+.sub-nav-ul li a:hover {
+    color: black;
+}
+
+
+/* LAYOUT */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+.hamburger {
+    color: var(--text);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* MOBILE HAMBURGER MENU */
+.mobile-nav-container {
+    background-color: var(--text);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;   
+    width: 100%;
+    top: 3.75rem;
+}  
+
+.nav-ul.main, .nav-ul.account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navigation li {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    
+}
+
+.nav-ul.main li {
+    display: flex;
+    flex-direction: column;
+}
+
+a.li-main {
+    margin-bottom: 1rem;
+}
+
+a.li-main:hover {
+    text-decoration: underline 2px black;
+}
+
+a.li-main::after {
+    content: url(images/icon-arrow-dark.svg);
+    margin-left: 0.4rem;
+}
+
+a.li-main.flip::after {
+    display: inline-block;
+    animation: flip 0.3s ease-in-out forwards;
+}
+
+a.li-main.flip-back::after {
+    display: inline-block;
+    animation: flip-back 0.3s ease-in-out forwards;
+}
+
+@keyframes flip {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-180deg) translateY(-3px);;
+    }
+  }
+
+@keyframes flip-back {
+    from {
+        transform: rotate(-180deg) translateY(-3px);
+    }
+    to {
+        transform: rotate(0) translateY(0);
+    }
+  }
+
+/* MOBILE SUB-NAVIGATION */
+
+/* .submenu {
+    width: 100%;
+} */
+
+.sub-nav-ul {
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    width: 100%;
+    min-width: 13rem;
+    padding: 1.2rem 2rem;
+}
+
+/* MOBILE LOGIN/SIGN UP PART */
+.mobile-nav-account-container {
+    border-top: 1px rgb(230, 230, 230) solid;
+    width: 100%;
+}
+
+#signup-btn {
+    border-radius: 1.8rem;
+    padding: 0.9rem 2.5rem;
+    background-image: linear-gradient(to right, var(--bg-gradient-light), var(--bg-gradient-red));
+    color: var(--text);
+}
+
+#signup-btn:hover {
+    background-image: linear-gradient(to right, hsl(13, 95%, 76%),hsl(353, 95%, 64%));
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    /* TYPOGRAPHY */
+    .nav-btn {
+        font-family: inherit;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    /* NAVIGATION */
+    .sub-nav-ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
