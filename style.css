@@ -39,8 +39,6 @@
     font-weight: 500; 
 }
 
-
-
 .header-content {
     color: var(--text);
     text-align: center;
@@ -133,7 +131,14 @@ nav {
     padding: 1rem;
     position: relative;
 }
+/* 
+.nav-ul {
+    width: 100%;
+}
 
+.li-main {
+    width: 100%;
+} */
 
 
 .navigation {
@@ -160,7 +165,8 @@ nav {
     width: 100%;
     overflow: hidden;
 
-    margin-top: 73rem;
+    /* margin-top: 25rem; */
+    top: 3.5rem;
     /* visibility: hidden; */
     /* display: none; */
 
@@ -204,14 +210,16 @@ a.li-main::after {
 
 a.li-main.flip::after {
     display: inline-block;
-    transform: rotate(180deg);
-    vertical-align: center;
-    /* animation: flip 0.3s ease-in-out forwards; */
+    /* transform: rotate(180deg); */
+    /*transform: rotate(180deg) translateY(-3px); */
+    /* vertical-align: center; */
+    animation: flip 0.3s ease-in-out forwards;
 }
 
-a.main.flip-back::after {
-    transform: rotate(90deg);
-    /* animation: flip-back 0.3s ease-in-out forwards; */
+a.li-main.flip-back::after {
+    /* transform: rotate(90deg); */
+    display: inline-block;
+    animation: flip-back 0.3s ease-in-out forwards;
 }
 
 @keyframes flip {
@@ -219,16 +227,16 @@ a.main.flip-back::after {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(-180deg);
+        transform: rotate(-180deg) translateY(-3px);;
     }
   }
 
 @keyframes flip-back {
     from {
-        transform: rotate(-180deg);
+        transform: rotate(-180deg) translateY(-3px);
     }
     to {
-        transform: rotate(0);
+        transform: rotate(0) translateY(0);
     }
   }
 
@@ -273,7 +281,6 @@ a.main.flip-back::after {
 #signup-btn:hover {
     background-image: linear-gradient(to right, hsl(13, 95%, 76%),hsl(353, 95%, 64%));
 }
-
 
 
 
