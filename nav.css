@@ -65,7 +65,6 @@
     list-style: none;
     display: inline-block;
     padding: 1rem 2rem;
-    
 }
 
 .nav-ul.main li {
@@ -115,11 +114,6 @@ a.li-main.flip-back::after {
   }
 
 /* MOBILE SUB-NAVIGATION */
-
-/* .submenu {
-    width: 100%;
-} */
-
 .sub-nav-ul {
     background-color: rgb(243, 243, 243);
     border-radius: 10px;
@@ -146,18 +140,134 @@ a.li-main.flip-back::after {
 }
 
 
-
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 960px) {
     /* TYPOGRAPHY */
+    .navigation a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
+        font-weight: 700; 
+    }
+
     .nav-btn {
         font-family: inherit;
         font-size: 1.25rem;
         font-weight: 500;
     }
+    
+    .sub-nav-ul li a {
+        text-align: left;
+    }
+
 
     /* NAVIGATION */
-    .sub-nav-ul {
+    .navigation {      
+        position: relative;
+
+        max-width: 75rem;               
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navigation li {
+        padding: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .mobile-nav-container {
+        position: unset;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: transparent;
+        border-radius: none;
+        
+        top: 0;
+
+        overflow: visible;
+    }  
+ 
+
+    .nav-ul.main, .nav-ul.account {
+        flex-direction: row;
+    }   
+
+    .nav-ul.main {
+        margin-left: 2.5rem;
+    }   
+   
+    .li-main {
+        display: inline-block;
+        min-width: 6rem;       
+    }
+
+    a.li-main {
+        padding: 0;
+        margin: 0 0.8rem;
+    }
+
+    a.li-main:hover {
+        text-decoration: underline 2px white;
+    }
+
+    a.li-main::after {
+        content: url(images/icon-arrow-light.svg);
+        margin-left: 0.4rem;
+    }
+
+
+    /* MOBILE LOGIN/SIGN UP PART */
+    .mobile-nav-account-container {
+        border-top: none;
+        width: 30%;
+    }
+
+    .nav-ul.account {
+        justify-content: space-between;
+    }
+
+    #signup-btn {
+        background-color: white;
+        background-image: none;
+        color: var(--bg-gradient-red);
+    }
+
+    #signup-btn:hover {
+        color: var(--text);
+        background-color: var(--cta-hover-bg);
+        background-image: none;
+    }
+
+
+    /* SUBMENU */   
+    .sub-nav-ul {
+        position: absolute;
+        top: 3rem;
+
+        min-width: 10rem;
+        width: fit-content;        
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+
+    .sub-nav-ul li {
+        margin-bottom: 1.5rem;
+        width: inherit;
+    }
+
+    .header-content {
+        padding-bottom: 5rem;
+    }
+}
+
+
+@media only screen and (min-width: 1020px) {
+    .mobile-nav-account-container {
+        border-top: none;        
+        max-width: 16rem;
     }
 }
