@@ -51,6 +51,7 @@
     position: absolute;   
     width: 100%;
     top: 3.75rem;
+    box-shadow: 0 1rem 2rem -0.15rem rgba(0,0,0,0.15);
 }  
 
 .nav-ul.main, .nav-ul.account {
