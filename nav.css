@@ -191,6 +191,7 @@ a.li-main.flip-back::after {
         top: 0;
 
         overflow: visible;
+        box-shadow: none;
     }  
  
 
