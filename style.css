@@ -202,7 +202,7 @@ p {
 }
 
 .section.first h2::after {
-    content: url(./images/illustration-editor-mobile.svg);
+    content: url(images/illustration-editor-mobile.svg);
     display: block;
     padding: 2rem 0;
 }
@@ -240,7 +240,7 @@ p {
 
 /* SECTION THREE */
 .section.third::before {
-    content: url(./images/illustration-laptop-mobile.svg);
+    content: url(images/illustration-laptop-mobile.svg);
     display: block;
     padding: 2rem 0;
 }
