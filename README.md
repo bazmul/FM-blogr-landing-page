@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](url)
+- [Solution](https://www.frontendmentor.io/solutions/blogr-landing-page-using-vanilla-js-html-and-css-gPM1opo74)
 - [Live Site](https://saravdberg.github.io/FM-blogr-landing-page/)
 
 ### Built with
